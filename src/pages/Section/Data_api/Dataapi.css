@@ -1,0 +1,31 @@
+.top {
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: rgb(128, 189, 1);
+}
+
+.im {
+    margin-left: 10px;
+    color: red;
+}
+
+.count {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.gray {
+    color: black;
+    background-color: rgb(229, 229, 229);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    font-size: 14px;
+}

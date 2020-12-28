@@ -1,0 +1,13 @@
+/* footer */
+
+footer {
+    width: 100%;
+    height: 192px;
+    background-color: #fff;
+}
+
+footer .footerbox {
+    margin: 0 auto;
+    width: 1370px;
+    height: 100%;
+}
