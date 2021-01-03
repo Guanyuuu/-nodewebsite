@@ -1,0 +1,116 @@
+.big_container {
+    margin: 20px auto;
+    width: 1400px;
+    height: 400px;
+}
+
+.big_container .login-left {
+    float: left;
+    width: 1090px;
+    height: 300px;
+    background-color: #fff;
+}
+
+
+/* 左侧样式 */
+
+.big_container .login-left .header {
+    padding: 10px;
+    width: 1070px;
+    height: 20px;
+    font-size: 14px;
+    background-color: rgb(246, 246, 246);
+}
+
+.zhuye {
+    color: rgb(143, 189, 1);
+}
+
+#us,
+#pw {
+    margin-left: 20px;
+    width: 284px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.username {
+    margin: 50px 0px 0px 100px;
+}
+
+.password {
+    margin: 20px 0px 0px 100px;
+    padding-left: 15px;
+}
+
+.last {
+    margin: 20px 165px;
+    height: 80px;
+}
+
+.form-login {
+    display: inline-block;
+    padding: 3px 10px;
+    width: 32px;
+    height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #0088CC;
+}
+
+.form-gitlogin {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-left: 5px;
+    width: 130px;
+    height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #5BC0DE;
+}
+
+.forgot-password {
+    margin-left: 20px;
+}
+
+
+/* 右侧样式 */
+
+.big_container .login-right {
+    float: right;
+    width: 290px;
+    height: 240px;
+    background-color: #fff;
+}
+
+.big_container .login-right .header {
+    padding: 10px;
+    width: 270px;
+    height: 20px;
+    font-size: 13px;
+    background-color: rgb(246, 246, 246);
+}
+
+.atten {
+    padding: 10px;
+    width: 290px;
+    height: 200px;
+}
+
+.login-li {
+    font-size: 13px;
+    margin: 15px 30px;
+    color: #333333;
+}
+
+.login-li li {
+    margin-bottom: 10px;
+}
+
+.zheli {
+    margin-top: 15px;
+}

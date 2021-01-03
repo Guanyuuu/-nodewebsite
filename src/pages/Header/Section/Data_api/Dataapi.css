@@ -12,11 +12,13 @@
 .count {
     display: inline-block;
     width: 80px;
+    font-size: 12px;
     text-align: center;
     line-height: 50px;
 }
 
 .gray {
+    border-radius: 4px;
     color: black;
     background-color: rgb(229, 229, 229);
 }
@@ -28,4 +30,8 @@ a {
 
 .content {
     font-size: 14px;
+}
+
+.content:hover {
+    text-decoration: underline;
 }

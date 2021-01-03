@@ -1,0 +1,23 @@
+section {
+    margin: 15px auto;
+    width: 1370px;
+    height: 1250px;
+}
+
+section .left {
+    float: left;
+    width: 1062px;
+    height: 1229px;
+    background-color: #fff;
+}
+
+.fash-head {
+    padding: 10px;
+    height: 20px;
+    font-size: 13px;
+    background-color: rgb(246, 246, 246);
+}
+
+.fash-body {
+    padding: 20px;
+}

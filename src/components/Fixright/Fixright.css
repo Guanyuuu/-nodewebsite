@@ -1,40 +1,3 @@
-/* section */
-
-section {
-    margin: 15px auto;
-    width: 1370px;
-    height: 2214px;
-}
-
-section .left {
-    float: left;
-    width: 1062px;
-    height: 2150px;
-}
-
-section .head {
-    width: 100%;
-    height: 40px;
-    background-color: #f6f6f6;
-}
-
-section li {
-    float: left;
-    list-style: none;
-    height: 24px;
-    padding: 8px 10px;
-}
-
-section li a {
-    color: #80Bd01;
-    text-decoration: none;
-}
-
-section .dataapi {
-    height: 50px;
-    background-color: #ffffff;
-}
-
 section .right {
     float: right;
     width: 290px;
@@ -45,6 +8,10 @@ section .right {
 .dataapi {
     line-height: 50px;
     height: 50px;
+}
+
+.dataapi:hover {
+    background-color: rgb(245, 245, 245);
 }
 
 .first {
@@ -97,4 +64,10 @@ section .right {
 .fifth {
     height: 285px;
     background-color: #fff;
+}
+
+.active {
+    color: #fff;
+    border-radius: 4px;
+    background-color: rgb(128, 189, 1);
 }

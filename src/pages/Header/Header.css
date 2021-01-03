@@ -42,3 +42,12 @@ header {
     color: #cccccc;
     text-decoration: none;
 }
+
+.cnode {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.heiginlight:hover {
+    color: #ffffff;
+}
