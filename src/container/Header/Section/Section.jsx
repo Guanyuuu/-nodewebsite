@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import {NavLink, Route, Switch, Redirect} from 'react-router-dom'
-import PubSub from 'pubsub-js'
+// import PubSub from 'pubsub-js'
 import Fixright from '../../../components/Fixright/Fixright'
-import Request from '../../../API/api'
 import Dataapi from './Data_api/Dataapi'
 import Share from './Share/Share'
 import Essence from './Essence/Essence'
@@ -13,50 +12,33 @@ import './Section.css'
 
 
 export default class Section extends Component {
-    state = {
-        data:[]
-    }
 
-    componentDidMount() {
-        const data = Request('https://cnodejs.org/api/v1/topics')
-        data.then(response => {
-            this.setState({
-                data: response.data
-            })
-        })
-    }
 
-    handlePublish = () => {
-        const {data} = this.state
-        PubSub.publish('dataAll', data)
-    }
     render() {
-        const {data} = this.state
-        console.log(data);
         // 默认发布第一次
-        PubSub.publish('dataAll', data)
+        // PubSub.publish('dataAll', data);
         return (
             <section className='max'>
                 <div className="left">
                     <div className="head">
                         <ul>
-                            <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/dataapi">全部</NavLink>
+                            <li onClick={this.clickGetData}>
+                                <NavLink className='section_height'  to='/section/dataapi'>全部</NavLink>
                             </li>
                             <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/essence">精华</NavLink>
+                                <NavLink className='section_height' to="/section/essence">精华</NavLink>
                             </li>
                             <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/share">分享</NavLink>
+                                <NavLink className='section_height' to="/section/share">分享</NavLink>
                             </li>
                             <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/problem">问答</NavLink>
+                                <NavLink className='section_height' to="/section/problem">问答</NavLink>
                             </li>
                             <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/recruit">招聘</NavLink>
+                                <NavLink className='section_height' to="/section/recruit">招聘</NavLink>
                             </li>
                             <li>
-                                <NavLink className='section_height' onClick={this.handlePublish} to="/section/clienttest">客户端测试</NavLink>
+                                <NavLink className='section_height' to="/section/clienttest">客户端测试</NavLink>
                             </li>
                         </ul>
                     </div>
@@ -77,4 +59,3 @@ export default class Section extends Component {
         )
     }
 }
-

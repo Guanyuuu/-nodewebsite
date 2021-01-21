@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Link, Route, Switch, Redirect} from 'react-router-dom'
+
+// import {reData} from '../../API/index'
 import Section from './Section/Section'
 import Fashman from './Fashman/Fashman'
 import Dapi from './DAPI/Dapi'
@@ -8,8 +10,25 @@ import Register from './Register/Register'
 import Login from './Login/Login'
 import './Header.css'
 
+
+
 export default class Header extends Component {
+
+    // componentDidMount() {
+    //     reData().then(response => {
+    //         this.props.handlePublishData(response.data)
+    //     })
+    // }
+
+    // handleGetData = () => {
+    //     const data = Request('https://cnodejs.org/api/v1/topics')
+    //     data.then(response => {
+    //         this.props.handlePublishData(response.data)
+    //     })
+    // }
+    // 传递参数data
     render() {
+
         return (
             <div>
                 <header>
@@ -55,3 +74,6 @@ export default class Header extends Component {
         )
     }
 }
+
+
+

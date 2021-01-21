@@ -1,1 +1,1 @@
-export const requestPageData = value => ({})
+export const requestPageData = value => ({ type: 'handlePublish', data: value })

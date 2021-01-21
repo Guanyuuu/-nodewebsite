@@ -1,22 +1,27 @@
 import React, { Component } from 'react'
-import PubSub from 'pubsub-js'
+// import PubSub from 'pubsub-js'
+import {connect} from 'react-redux'
+import {reData} from '../../../../API/index'
+import {requestPageData} from '../../../../redux/actions/action_api'
 import './Dataapi.css'
 
-export default class Dataapi extends Component {
-    state = {
-        data:[]
-    }
-   
+
+class Dataapi extends Component {
+
+
     componentDidMount() {
-        this.token = PubSub.subscribe('dataAll', (_,data) => {
-            this.setState({data})
+    //  const data = Request('https://cnodejs.org/api/v1/topics')
+        reData().then(response => {
+            this.props.handlePublishData(response.data)
         })
     }
-    componentWillUnmount() {
-        PubSub.unsubscribe(this.token)
-    }
+
     render() {
-        const {data} = this.state
+        // const {data} = this.state
+        const {data} = this.props
+        // console.log(this.props);
+        // console.log('@@@调用data',m++);
+        // const data = this.props.location.state
         return (
             data.map(value => {
                 return (
@@ -34,3 +39,12 @@ export default class Dataapi extends Component {
         )
     }
 }
+
+
+export default connect(
+    state => ({data:state}),{
+        handlePublishData:requestPageData
+    }
+    
+)(Dataapi)
+
